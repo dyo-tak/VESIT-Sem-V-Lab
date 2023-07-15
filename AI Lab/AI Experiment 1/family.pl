@@ -9,7 +9,6 @@ female(bhagyashri).
 female(mrunal).
 female(madhura).
 
-
 male(nuren).
 male(dyotak).
 male(yash).
@@ -20,7 +19,6 @@ male(nishant).
 male(pranav).
 male(nandan).
 male(mukund).
-
 
 parent(mandar,dyotak).
 parent(nikhili,dyotak).
