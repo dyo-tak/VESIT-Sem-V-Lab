@@ -48,7 +48,10 @@ class Maze:
         if x <= 0 or y <= 0:
             return False
         
-        if maze[x][y] == "󰚍":
+        if x > len(maze) or y > len(maze[0]):
+            return False
+
+        if maze[y][x] == "󰚍":
             return False
         
         return True
@@ -64,5 +67,5 @@ class Maze:
 
 m = Maze()
 maze = m.create_maze()
-m.is_allowed(maze)
+print(m.is_allowed(maze,'RRRRR'))
 m.print_maze(maze)
