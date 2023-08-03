@@ -9,7 +9,7 @@ class Maze:
 
     def __init__(self):    
         self.start = ""
-        self.goal = "="
+        self.goal = ""
         self.path = ""
         self.block = "󰚍"
 
@@ -30,7 +30,7 @@ class Maze:
 
         return maze
 
-    def is_allowed(self, maze, moves=""):
+    def is_allowed(self, maze, moves="") -> bool:
         start_index = maze[0].index(self.start)
         x = start_index
         y = 0
