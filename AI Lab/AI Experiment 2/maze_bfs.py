@@ -36,14 +36,11 @@ class Maze:
         y = 0
 
         for i in moves:
-            if i == "L":
-                x -= 1
-            if i == "R":
-                x += 1
-            if i == "U":
-                y -= 1
-            if i == "D":
-                y += 1
+            if i == "L": x -= 1
+            if i == "R": x += 1
+            if i == "U": y -= 1
+            if i == "D": y += 1
+                
 
         if x <= 0 or y <= 0:
             return False
@@ -51,7 +48,7 @@ class Maze:
         if x > len(maze) or y > len(maze[0]):
             return False
 
-        if maze[y][x] == "󰚍":
+        if maze[y][x] == self.block:
             return False
         
         return True
@@ -67,5 +64,4 @@ class Maze:
 
 m = Maze()
 maze = m.create_maze()
-print(m.is_allowed(maze,'RRRRR'))
 m.print_maze(maze)
