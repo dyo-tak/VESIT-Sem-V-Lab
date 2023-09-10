@@ -141,11 +141,16 @@ body {
     opacity: 70%;
 }
 
+.container {
+    justify-content: center;
+}
+
 #post-form {
     background-color: #f0f0f0;
     padding: 20px;
     margin-top: 20px;
-    border-radius: 5px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 #post-form label {
     font-weight: bold;

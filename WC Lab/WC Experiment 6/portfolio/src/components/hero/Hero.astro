@@ -1,0 +1,62 @@
+---
+import { Image } from "astro:assets";
+import Navbar from "./navbar/Navbar.astro";
+import ProfilePic from "../images/pic.png";
+---
+
+<div class="flex flex-col space-y-20 lg:space-y-28">
+  <div class="z-0 bg-lightPattern">
+    <div
+      class="overflow-hidden mx-auto max-w-6xl flex-col align-center justify-center py-8 px-5 xl:px-0"
+    >
+      <Navbar />
+      <div
+        class="flex flex-col items-center lg:flex-row justify-between pt-10 pb-10 lg:pt-28 lg:pb-28"
+      >
+        <div
+          class="flex flex-col items-center justify-center magilo text-7xl md:text-9xl lg:text-start lg:items-start"
+        >
+          <p>Hello</p>
+          <p>I'm <span class="letter-D">Dyotak</span></p>
+        </div>
+        <div class="flex justify-center">
+
+        <Image
+          src={ProfilePic}
+          alt="Profile Picture"
+          class="bottom-0 items-end w-[500px] h-[auto]"
+        />
+      </div>
+    </div>
+  </div>
+
+  <style>
+    @font-face {
+      font-family: "Magilo";
+      src: url("../font/MagilioRegular-8Mxvg.otf") format("woff2");
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    .bg-lightPattern {
+      background-image: url("../images/homeLightPattern.svg");
+    }
+
+    .magilo {
+      font-family: "Magilo", sans-serif;
+      position: relative;
+    }
+
+    .letter-D {
+      color: #576cbc;
+      position: relative;
+      font-weight: 500;
+      text-shadow: -5px 4px #0b2447;
+
+      @media (max-width: 768px) {
+        text-shadow: -2px 2px #0b2447; /* New text shadow for smaller screens */
+      }
+
+    }
+  </style>
+</div>
