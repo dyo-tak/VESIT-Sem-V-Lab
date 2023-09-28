@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&family=Poppins&family=Unbounded:wght@500&display=swap');
 
 :root {
+
+  
     --primary-color: #141414;
     --secondary-color: #f3f3f3;
 }
@@ -28,7 +30,28 @@ body {
     font-family: 'Poppins', sans-serif;
 }
 
+.navbar {
+    background-color: var(--primary-color);
+    
+}
 
+.navbar-brand {
+    font-weight: bold; /* Make the font bold */
+    color: #f3f3f3 !important;/* Set font color to white or your preferred light color */
+}
+
+.navbar-nav .nav-link {
+    color: #f3f3f3 !important;/* Set font color to white or your preferred light color */
+}
+
+.create-post-button {
+    background-color: #007BFF; /* Button background color */
+    color: #fff; /* Button text color */
+    font-weight: 600px;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
 
 #blog {
     display: flex;
@@ -37,7 +60,7 @@ body {
     align-items: center;
     flex-direction: column;
     border-bottom: 1px solid --secondary-color;
-    background-image: url(../assets/homeDarkPattern.svg);
+    background-color: var(--primary-color);
 }
 
 .blog__heading {

@@ -1,0 +1,47 @@
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+input[type='text'],
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.btn {
+  background-color: #00796b;
+  color: #fff;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Adjust the size of the content box */
+.materialize-textarea {
+  min-height: 150px; /* Increase or decrease as needed */
+}
+
+/* Style the time display */
+.time-display {
+  font-size: 18px;
+  margin-top: 20px;
+  color: #555;
+}
+
+.right-align {
+  text-align: right;
+}
+
+/* Center align the submit button */
+.btn {
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

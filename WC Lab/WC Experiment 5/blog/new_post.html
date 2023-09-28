@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <title>New Post</title>
+  </head>
+  <body>
+    <script src="./scripts/validation.js"></script>
+
+      <div class="container">
+        <div class="time-display right-align">
+          <span id="current-time">00:00:00</span>
+        </div>
+        <h2>New Post</h2>
+        <form id="postForm">
+          <div class="input-field">
+            <input
+              type="text"
+              id="title"
+              name="title"
+              class="validate"
+              required
+            />
+            <label for="title">Title</label>
+          </div>
+          <div class="input-field">
+            <textarea
+              id="content"
+              name="content"
+              class="materialize-textarea"
+              required
+            ></textarea>
+            <label for="content">Content</label>
+          </div>
+          <div class="file-field input-field">
+            <div class="btn">
+              <span>Upload Image</span>
+              <input type="file" id="image" name="image" accept="image/*" />
+            </div>
+            <div class="file-path-wrapper">
+              <input class="file-path validate" type="text" placeholder="Select an image" />
+            </div>
+          </div>
+          <button class="btn waves-effect waves-light" type="submit">
+            Submit
+          </button>
+        </form>
+        
+      </div>
+
+  </body>
+</html>
