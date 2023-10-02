@@ -1,0 +1,6 @@
+export { default as Home } from './Home'
+export { default as Dashboard } from './Dashboard'
+export { default as Generate } from './Generate'
+export { default as Counter } from './Counter'
+export { default as Form } from './Form'
+// export { default as GenerateQR } from './GenerateQR'
